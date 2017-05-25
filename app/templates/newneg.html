@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="description" content="Red de restaurantes,bares y comidas rápidas. Encuentra tu lugar favorito" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>navi - Conéctate a la red más grande de restaurantes y comidas rápidas</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/static/normalize.css" />
+	<link rel="shortcut icon" href="/static/navi8.png" />
+
+	
+	<link rel="stylesheet" href="/static/styles.css">
+
+
+</head>
+<body>
+
+	<header>
+		<nav>
+			<a href="{% url "home" %}" class="icon-logo"></a>
+			<a href="{% url "home" %}" class="icon-navi"></a>
+			<button class="but">Buscar</button> 
+			
+			
+		</nav>
+
+	</header>
+
+	<section id="contenido">
+		<article class="busca">
+			<form method="get">
+				
+				<!-- <input class="lel" name="negocio" placeholder="Nombre del Negocio"> -->
+				<input class="lel" list="tipos" name="tipo" placeholder="Tipo de Negocio" required>
+					<datalist id="tipos">
+						{% for type in tipos %}
+						<option value="{{type.tiponegocio}}">
+						{% endfor %}
+					</datalist>
+				<input class="lel" list="ciudades" name="ciudad" placeholder="Ciudad" required>
+					<datalist id="ciudades">
+						{% for city in ciudades %}
+						<option value="{{city.nombre}}">
+						{% endfor %}
+					</datalist>
+		    	<input class="but" type="submit">
+
+
+
+
+			</form>
+
+
+
+		</article>
+
+		
+		<article >
+			<form method="post" enctype="multipart/form-data">
+		    
+		        {% csrf_token %}
+			    {{form.as_p}}
+			    <input class="but" type="submit" value="Enviar">
+			
+
+			</form>
+		</article>
+		
+
+		<article class="oth">
+					
+			<a href="#" class="but">Contáctanos</a>
+
+		</article>
+
+		
+		
+	</section>
+<!--
+	<footer>
+		
+		<div><a href="#" class="star icon-star"></a></div>
+			
+		
+		<a class="rec icon-check" href="#"> Recomendados</a>
+	</footer>
+-->
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="/static/index.js"></script>
+
+</body>
+</html>    

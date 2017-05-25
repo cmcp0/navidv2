@@ -1,0 +1,210 @@
+body{
+
+	background: rgb(51,0,51);
+	color: rgb(204,204,204);
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 16px;
+}
+header
+{
+
+	
+	max-height: 60px;
+	padding: 1.5em 0 0 1em;
+	position: relative;
+
+}
+header a
+{
+	border-radius: 5px;
+	color: rgb(204,204,204);
+	
+	margin-left: 1.5em;
+	text-decoration: none;
+}
+header .but{
+	float: right;
+	margin-right: 3em;
+	margin-top: 1em;
+}
+header .but:active{
+	margin-top: 19px;
+}
+
+header .icon-logo
+{
+	font-size: 2.7em;
+	margin-left: 0.3em;
+}
+header .icon-navi
+{
+	font-size: 1.8em;
+	margin-left: 0;
+}
+header .icon-logo:hover,
+header .icon-buscar:hover,
+header .icon-navi:hover
+{
+	text-shadow:rgba(0,0,0,0.5) 1.5px 1px 3px;;
+}
+
+section {
+
+	position: relative;
+}
+section .busca form {
+	display: none;
+	margin: 2em;
+	text-align:center;
+
+}
+section .busca form .lel {
+	border: none;
+	margin: .2em
+
+}
+section .oth {
+	
+	
+	padding-bottom: 2em;
+	position: relative;
+	text-align: center;
+}
+section .oth a,
+section .oth span {
+
+	padding: 0em .2em 0em .2em;
+	position: inherit;
+	
+	
+}
+
+
+
+section .oth .but:nth-child(odd){
+	top: 8px;
+}
+section .oth .but:active:nth-child(odd){
+	top: 12px;
+}
+section .item {
+
+	display: inline-block;
+	margin: 3em 2em 2em 2em;
+	text-align: center;
+
+
+}
+section .item a {
+
+	color: rgb(204,204,204);
+	text-decoration: none;
+	padding-top: 5em;
+}
+
+
+section .item:nth-child(2) {
+/*
+	margin-right: 3em;
+	padding-left: 1.5em;	
+*/	
+
+}
+section .item:nth-child(even) {
+
+	
+/*	margin-left: 4em; */
+
+}
+
+section .item .logoNegocio img{
+
+	border-radius: 50%;
+	height: 70px;
+	width: 70px;
+}
+
+
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?yjfwc7');
+	src:url('fonts/icomoon.eot?#iefixyjfwc7') format('embedded-opentype'),
+		url('fonts/icomoon.woff?yjfwc7') format('woff'),
+		url('fonts/icomoon.ttf?yjfwc7') format('truetype'),
+		url('fonts/icomoon.svg?yjfwc7#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.but {
+
+	
+	background: rgb(204,204,204);
+	border-bottom: 3px solid rgb(153,153,153) ;
+	border-radius: 5px;
+	color: rgb(51,0,51);
+	
+	
+	text-decoration: none;
+
+}
+.but:active {
+	border-bottom: 0px solid rgb(153,153,153) ;
+	top: 5px;
+}
+.icon-logo:before {
+	content: "\e600";
+}
+.icon-navi:before {
+	content: "\e601";
+}
+.icon-carga:before {
+	content: "\e602";
+}
+.icon-buscar:before {
+	content: "\e603";
+}
+.icon-config:before {
+	content: "\e604";
+}
+.icon-bares:before {
+	content: "\e605";
+}
+.icon-comidas:before {
+	content: "\e606";
+}
+.icon-restaurant:before {
+	content: "\e607";
+}
+.icon-fire:before {
+	content: "\e608";
+}
+.icon-rayo:before {
+	content: "\e609";
+}
+.icon-switch:before {
+	content: "\e60a";
+}
+.icon-menu:before {
+	content: "\e60b";
+}
+.icon-star:before {
+	content: "\e60c";
+}
+.icon-check:before {
+	content: "\e60d";
+}
